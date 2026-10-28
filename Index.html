@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Bangun Ruang - jQuery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">Tugas Kelompok · Pemograman Web</p>
+      <h1>Kalkulator <span>Bangun Ruang</span></h1>
+      <p>Hitung volume dan luas permukaan 8 bangun ruang secara interaktif.</p>
+    </header>
+
+    <section class="shapes" id="daftarBangun" aria-label="Pilih bangun ruang"></section>
+
+    <section class="card">
+      <div class="card-heading">
+        <div>
+          <h2 id="judul">🧊 Kubus</h2>
+          <p id="rumus" class="rumus"></p>
+        </div>
+        <span class="live-badge"><span class="dot"></span> Hasil langsung</span>
+      </div>
+
+      <form id="form" novalidate>
+        <div id="inputs" class="input-grid"></div>
+        <p id="pesan" class="message" role="status"></p>
+        <div class="actions">
+          <button type="submit" class="btn btn-hitung">Hitung</button>
+          <button type="button" id="btnReset" class="btn btn-reset">Reset</button>
+        </div>
+      </form>
+      <div id="hasil" aria-live="polite"></div>
+    </section>
+    <footer>Project Bangun Ruang · HTML, CSS, JavaScript &amp; jQuery</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
